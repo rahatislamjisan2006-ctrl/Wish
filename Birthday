@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .code-container {
+            border: 1px solid #333;
+            padding: 2rem;
+            border-radius: 8px;
+            background: #252526;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .keyword { color: #569cd6; }
+        .function { color: #dcdcaa; }
+        .string { color: #ce9178; }
+        .comment { color: #6a9955; font-style: italic; }
+        .variable { color: #9cdcfe; }
+    </style>
+</head>
+<body>
+
+<div class="code-container">
+    <div class="comment">// A special function for a great friend</div>
+    <span class="keyword">function</span> <span class="function">celebrateBirthday</span>(<span class="variable">friend</span>) {
+        <span class="keyword">if</span> (<span class="variable">friend</span>.isAwesome) {
+            <span class="keyword">return</span> <span class="string">"Happy Birthday! 🎂"</span>;
+        }
+    }
+
+    <span class="function">console</span>.log(<span class="function">celebrateBirthday</span>(<span class="string">"Dear Friend"</span>));
+</div>
+
+</body>
+</html>
